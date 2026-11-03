@@ -1,20 +1,20 @@
-name:
- devflow
+name: devflow
+
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   first-flow:
-     runs-on: ubuntu-latest
-     steps:
-       - name: print hello
-         run: echo "Hello my people"
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello
+        run: echo "Hello my people"
 
-       - name: check git runner info
-         run: 
+      - name: check git runner info
+        run: |
           echo "TESTING THIS"
-           sudo useradd frank
-           whomai
-           pwd
+          sudo useradd frank
+          whoami
+          pwd
