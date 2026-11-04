@@ -1,0 +1,29 @@
+name:
+ checker-flow
+
+
+on:
+  push:
+    branches:
+     - main
+
+jobs:
+ kofi-jobs:
+
+    runs-on:
+      ubuntu-latest
+    
+    steps:
+      - name:
+          Kofi-krom
+        run: echo "Hello  Gideon Mensah"
+
+      - name:
+          linux-cmd
+        
+        run:
+          whomai
+          pwd
+          ls -la
+
+          docker ps
